@@ -1,4 +1,8 @@
-#Raya Azima doing this for the millionth time on May1, 2025 until I land a job
+# Author: Raya Azima
+# Problem: Longest Substring Without Repeating Characters
+# Date: May 1, 2025 — practicing until I land the job!
+# Time Complexity: O(n) — each character is visited once
+# Space Complexity: O(min(n, m)) — set stores up to n characters (or m unique ones)
 from typing import Optional, List
 from collections import deque
 
@@ -21,9 +25,9 @@ class Solution:
              
 
 if __name__ == "__main__":
-   Solution = Solution()
-   s = "aab"
-   result = Solution.lengthOfLongestSubstring(s)
+    test_cases = ["aab", "abcabcbb", "bbbbb", "pwwkew", ""]
 
-   print("Result:", result)
-    
+    solver = Solution()
+    for s in test_cases:
+        result = solver.lengthOfLongestSubstring(s)
+        print(f"Input: '{s}' → Output: {result}")
