@@ -20,11 +20,7 @@ class Solution:
             compliment = target - n
             if compliment in hash_seen:
                 return [hash_seen[compliment], i]
-            hash_seen[n] = i
-
-
-            
-        
+            hash_seen[n] = i     
 
 if __name__ == "__main__":
     test_cases = [
