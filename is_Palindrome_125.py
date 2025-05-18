@@ -7,8 +7,6 @@
 # Space Complexity: 
 # 
 
-from typing import List
-
 class Solution:
     def isPalindrome(self, s: str) -> bool:
        left ,right = 0, len(s) - 1
