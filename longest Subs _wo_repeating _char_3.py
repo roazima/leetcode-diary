@@ -3,9 +3,6 @@
 # Date: May 1, 2025 — practicing until I land the job!
 # Time Complexity: O(n) — each character is visited once
 # Space Complexity: O(min(n, m)) — set stores up to n characters (or m unique ones)
-from typing import Optional, List
-from collections import deque
-
 class Solution:
    def lengthOfLongestSubstring(self, s: str) -> int:
         seen = set()
